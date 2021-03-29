@@ -4,8 +4,8 @@
 # matrix.target=${Modelfile}
 
 DIY_GET_COMMON_SH() {
-TYZZZ="package/lean/default-settings/files/zzz-default-settings"
-LIZZZ="package/default-settings/files/zzz-default-settings"
+TYota="package/lean/default-settings/files/zzz-default-settings"
+LIota="package/default-settings/files/zzz-default-settings"
 }
 
 # 全脚本源码通用diy.sh文件
@@ -41,7 +41,7 @@ fi
 Diy_lede() {
 DIY_GET_COMMON_SH
 rm -rf package/lean/{luci-app-netdata,luci-theme-argon,k3screenctrl}
-sed -i 's/iptables -t nat/# iptables -t nat/g' ${TYZZZ}
+sed -i 's/iptables -t nat/# iptables -t nat/g' ${TYota}
 if [[ "${Modelfile}" == "Lede_x86_64" ]]; then
 sed -i '/IMAGES_GZIP/d' "${PATH1}/${CONFIG_FILE}" > /dev/null 2>&1
 echo -e "\nCONFIG_TARGET_IMAGES_GZIP=y" >> "${PATH1}/${CONFIG_FILE}"
