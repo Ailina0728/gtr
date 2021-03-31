@@ -48,7 +48,7 @@ echo -e "\nCONFIG_TARGET_IMAGES_GZIP=y" >> "${PATH1}/${CONFIG_FILE}"
 fi
 
 git clone https://github.com/fw876/helloworld package/danshui/luci-app-ssr-plus
-git clone https://github.com/xiaorouji/openwrt-passwall package/danshui/luci-app-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/danshui/luci-app-passwall
 git clone https://github.com/jerrykuku/luci-app-vssr package/danshui/luci-app-vssr
 git clone https://github.com/vernesong/OpenClash package/danshui/luci-app-openclash
 git clone https://github.com/frainzy1477/luci-app-clash package/danshui/luci-app-clash
